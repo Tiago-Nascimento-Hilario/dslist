@@ -1,5 +1,6 @@
 package com.tiago.dslist.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,7 +20,10 @@ public class Game {
     private String plataforma;
     private Double pontuacao;
     private String foto;
+    @Column(name="descricao_curta")
     private String descricaoCurta;
+    
+    @Column(name="descricao_longa")
     private String descricaoLonga;
 
     public Game(){}
