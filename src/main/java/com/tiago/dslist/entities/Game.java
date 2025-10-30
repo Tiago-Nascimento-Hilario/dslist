@@ -14,8 +14,7 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-    private String titulo;
-    private Integer  ano;
+
     private String genero;
     private String plataforma;
     private Double pontuacao;
@@ -28,11 +27,9 @@ public class Game {
 
     public Game(){}
 
-    public Game(Long id, String titulo, Integer ano, String genero, String plataforma, Double pontuacao, String foto,
+    public Game(Long id, String genero, String plataforma, Double pontuacao, String foto,
             String descricaoCurta, String descricaoLonga) {
         this.id = id;
-        this.titulo = titulo;
-        this.ano = ano;
         this.genero = genero;
         this.plataforma = plataforma;
         this.pontuacao = pontuacao;
@@ -49,21 +46,7 @@ public class Game {
         this.id = id;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public Integer getAno() {
-        return ano;
-    }
-
-    public void setAno(Integer ano) {
-        this.ano = ano;
-    }
 
     public String getGenero() {
         return genero;

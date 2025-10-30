@@ -7,8 +7,7 @@ import jakarta.persistence.Column;
 public class GamerDTO {
 
     private Long id ;
-    private String titulo;
-    private Integer  ano;
+
     private String genero;
     private String plataforma;
     private Double pontuacao;
@@ -20,8 +19,6 @@ public class GamerDTO {
 
     public GamerDTO( Game entity) {
         this.id = entity.getId();
-        this.titulo = entity.getTitulo();
-        this.ano = entity.getAno();
         this.genero = entity.getGenero();
         this.plataforma = entity.getPlataforma();
         this.pontuacao = entity.getPontuacao();
@@ -34,13 +31,7 @@ public class GamerDTO {
         return id;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
 
-    public Integer getAno() {
-        return ano;
-    }
 
     public String getGenero() {
         return genero;
