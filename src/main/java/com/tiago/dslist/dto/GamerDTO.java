@@ -2,7 +2,6 @@ package com.tiago.dslist.dto;
 
 import com.tiago.dslist.entities.Game;
 
-import jakarta.persistence.Column;
 
 public class GamerDTO {
 
@@ -32,7 +31,6 @@ public class GamerDTO {
     }
 
 
-
     public String getGenero() {
         return genero;
     }
@@ -56,11 +54,6 @@ public class GamerDTO {
     public String getDescricaoLonga() {
         return descricaoLonga;
     }
-
-
-    
-
-    
 
 
 }

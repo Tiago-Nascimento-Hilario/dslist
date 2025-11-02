@@ -1,3 +1,4 @@
+
 INSERT INTO tb_game (genero, plataforma, pontuacao, foto, DESCRICAO_CURTA, DESCRICAO_LONGA) VALUES ('Aventura', 'Nintendo Switch', 9.8, 'zelda.jpg', 'Explore Hyrule em mundo aberto.', 'Um jogo de ação e aventura em mundo aberto que redefine a franquia Zelda com liberdade total e jogabilidade inovadora.');
 
 INSERT INTO tb_game (genero, plataforma, pontuacao, foto, DESCRICAO_CURTA, DESCRICAO_LONGA) VALUES ('Ação', 'PlayStation 5', 9.6, 'gow_ragnarok.jpg', 'Kratos enfrenta o fim dos tempos.', 'Sequência épica que mistura mitologia nórdica e emoção, acompanhando Kratos e Atreus em uma jornada intensa.');
@@ -17,3 +18,20 @@ INSERT INTO tb_game (genero, plataforma, pontuacao, foto, DESCRICAO_CURTA, DESCR
 INSERT INTO tb_game (genero, plataforma, pontuacao, foto, DESCRICAO_CURTA, DESCRICAO_LONGA) VALUES ('RPG', 'PC', 9.9, 'witcher3.jpg', 'A jornada de Geralt de Rivia.', 'Um RPG de fantasia com enredo profundo, escolhas morais e vasto mundo aberto repleto de missões.');
 
 INSERT INTO tb_game (genero, plataforma, pontuacao, foto, DESCRICAO_CURTA, DESCRICAO_LONGA) VALUES ('Terror', 'PlayStation 5', 9.4, 're4_remake.jpg', 'O terror clássico renasce.', 'Remake do clássico de 2005 com gráficos modernos, gameplay aprimorado e atmosfera intensa.');
+
+
+INSERT INTO tb_game_list (nome) VALUES('Ação');
+INSERT INTO tb_game_list (nome) VALUES('RPG');
+
+
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (1, 1, 0);
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (1, 2, 1);
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (1, 3, 2);
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (1, 4, 3);
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (1, 5, 4);
+
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (2, 6, 0)
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (2, 7, 1)
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (2, 8, 2)
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (2, 9, 3)
+INSERT INTO tb_pertencimento (game_list_id, game_id, posicao) VALUES (2, 10, 4)
